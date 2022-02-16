@@ -1,0 +1,6 @@
+     - name: copy data files into apache
+       template:
+          src: templates/index.html.j2
+          dest: /var/www/html/index.html
+       register: copy_status
+       notify: restart apache

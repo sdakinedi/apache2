@@ -1,0 +1,5 @@
+---
+# tasks file for apache2
+tasks:
+     - include_tasks: install.yml
+     - include_tasks: configure.yml
